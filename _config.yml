@@ -1,8 +1,8 @@
 # Site settings
 title: LaneDenson @ GitHub
-email: lanedenson@lanedenson.com
+email: lanedenson@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  An awesome description for my github.io page.
+  Experimenting with Jackyl. I'm a lumberjack, baby. I mean Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://lanedenson.github.io" # the base hostname & protocol for your site
 twitter_username: lanedenson
