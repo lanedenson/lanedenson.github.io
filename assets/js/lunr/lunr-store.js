@@ -2,7 +2,7 @@ var store = [{
         "title": "Getting Started with GitHub Pages",
         "excerpt":"Your content goes here. You can use Markdown formatting.   Introduction   GitHub Pages is a great way to host static websites directly from your GitHub repository.   Key Features      Free hosting   Automatic builds with Jekyll   Custom domain support   Getting Started   To get started with GitHub Pages, you need to…  ","categories": ["web-development"],
         "tags": ["github","jekyll","static-site"],
-        "url": "/web-development/2024/03/19/getting-started-with-github-pages.html",
+        "url": "/web-development/2024/09/25/getting-started-with-github-pages.html",
         "teaser": null
       },{
         "title": "Welcome to Jekyll! 2",
