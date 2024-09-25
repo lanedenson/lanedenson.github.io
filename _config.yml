@@ -124,5 +124,5 @@ kramdown:
   hard_wrap: false
 future: true
 jailed: false
-theme: jekyll-theme-primer  # or your chosen theme
+theme: minimal-mistakes-jekyll # or your chosen theme
 gfm_quirks: paragraph_end

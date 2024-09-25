@@ -28,8 +28,10 @@ jobs:
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
+      - name: Display _config.yml contents
+        run: cat _config.yml
       - name: Build site
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --verbose
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
