@@ -33,9 +33,9 @@ github_username:  lanedenson
 
 # Build settings
 theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"  # Use the latest version number
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 plugins:
-  - jekyll-feed
   - jekyll-include-cache
   # Add other plugins you're using
 

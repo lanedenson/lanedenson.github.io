@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'  # Updated to the latest stable Ruby version
-          bundler-cache: true
-      - name: Unfreeze Gemfile.lock
-        run: bundle config set --local frozen false
+          ruby-version: '3.2'
+          bundler-cache: false  # Set this to false to avoid using the cache
+      - name: Remove Gemfile.lock
+        run: rm -f Gemfile.lock
       - name: Install dependencies
         run: |
           gem install bundler
