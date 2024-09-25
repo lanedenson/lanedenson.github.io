@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Getting Started with GitHub Pages"
-date: 2024-03-19
+date: 2024-09-25
 categories: web-development
 tags: [github, jekyll, static-site]
 ---
