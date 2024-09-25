@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-include-cache", group: :jekyll_plugins
+gem "jekyll", "~> 4.3.3"  # Use the latest version of Jekyll
 gem "minimal-mistakes-jekyll"
+gem "jekyll-include-cache"
 
 # Add other plugins you might be using, for example:
 # gem "jekyll-feed"
