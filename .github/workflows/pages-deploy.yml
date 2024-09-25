@@ -14,12 +14,16 @@ jobs:
         with:
           ruby-version: '3.2'  # Updated to the latest stable Ruby version
           bundler-cache: true
+      - name: Unfreeze Gemfile.lock
+        run: bundle config set --local frozen false
       - name: Install dependencies
         run: |
           gem install bundler
-          bundle install --jobs 4 --retry 3
+          bundle install --jobs 4 --retry 3 --verbose
       - name: Build site
-        run: bundle exec jekyll build
+        run: |
+          bundle exec jekyll build --trace
+          ls -la _site  # List contents of _site directory
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
