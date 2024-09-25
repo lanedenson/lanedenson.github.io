@@ -3,7 +3,12 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Set this to your default branch
+      - master # Set this to your default branch
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -13,9 +18,16 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true
+          bundler-cache: false  # Disable bundler cache
+      - name: Remove Gemfile.lock and clear bundle cache
+        run: |
+          rm -f Gemfile.lock
+          bundle config --local path vendor/bundle
+          bundle config --local deployment false
       - name: Install dependencies
-        run: bundle install
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
       - name: Build site
         run: bundle exec jekyll build
       - name: Upload artifact
