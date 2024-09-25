@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Jekyll! 2"
 date:   2024-09-24 22:33:54 -0500
 categories:
   - blog
