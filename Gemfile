@@ -5,7 +5,7 @@ gem "minimal-mistakes-jekyll", "4.28.0"
 gem "jekyll-include-cache"
 gem "jekyll-remote-theme"
 
-gem "faraday", "~> 2.14.1"
+gem "faraday", "~> 2.14.3"
 gem "rexml", ">= 3.4.2"
 gem "uri", ">= 1.1.1"
 
